@@ -129,13 +129,14 @@ form button:hover {
     background-color: aqua;
     bottom: 0px; /* Alt çubuk en alt köşeye sabitlendi */
     position: fixed;
-    width: 100%;
+    width: 40%;
     text-align: center;
     padding: 10px;
     font-size: 18px;
     border-top: 3px solid blue; /* Çubuğa belirgin bir üst sınır eklendi */
-    height: 50px; /* Daha belirgin bir yükseklik verildi */
+    height: 20px; /* Daha belirgin bir yükseklik verildi */
     line-height: 50px; /* Metni ortalamak için line-height kullanıldı */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Gölgelendirme eklendi */
-   
+    height: 30%;
 }
+
