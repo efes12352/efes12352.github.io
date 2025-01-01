@@ -1,19 +1,21 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Formdan gelen verileri al
-    $isim = htmlspecialchars($_POST['isim']); // Kullanıcı adını güvenli bir şekilde al
-    $mesaj = htmlspecialchars($_POST['mesaj']); // Mesajı güvenli bir şekilde al
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $rating = $_POST['rating'];
 
-    // Dosyaya yazma
-    $dosya = 'degerlendirmeler.txt'; // Değerlendirmeleri saklamak için bir dosya
-    $yeniDegerlendirme = "İsim: $isim\nMesaj: $mesaj\n---\n";
+    // Verileri e-posta olarak göndermek
+    $to = "efeeymenefeeymen81@gmail.com";  // Buraya kendi e-posta adresinizi yazın
+    $subject = "Yeni Değerlendirme Mesajı";
+    $body = "Ad Soyad: $name\nE-posta: $email\nDeğerlendirme: $rating Yıldız\nMesaj: $message";
+    $headers = "efeeymenefeeymen81@gmail.com";  // Buraya kendi e-posta adresinizi yazın
 
-    if (file_put_contents($dosya, $yeniDegerlendirme, FILE_APPEND)) {
-        echo "Teşekkürler! Değerlendirmeniz kaydedildi.";
+    // E-posta gönderme
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Mesajınız başarıyla gönderildi.";
     } else {
-        echo "Bir hata oluştu, lütfen tekrar deneyin.";
+        echo "Mesaj gönderilirken bir hata oluştu.";
     }
-} else {
-    echo "Form gönderilmedi.";
 }
 ?>
