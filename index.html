@@ -4,7 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Efe'nin Kişisel Web Sitesi</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0078d7;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #0078d7;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea, button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #0078d7;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,26 +86,25 @@
             <ul>
                 <li><a href="#hakkimda">Hakkımda</a></li>
                 <li><a href="#projeler">Projeler</a></li>
-                <li><a href="#iletisim">İletişim</a></li>
+                <li><a href="#degerlendirme">Değerlendirme</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="hakkimda">
         <h2>Hakkımda</h2>
-        <p>Merhaba! Ben Efe, teknoloji ve yaratıcılıkla ilgilenen tutkulu bir bireyim. Bu alan, yolculuğumu, projelerimi paylaşmak ve benzer düşünen insanlarla bağlantı kurmak için oluşturuldu.</p>
+        <p>Merhaba! Ben Efe, teknoloji ve yaratıcılıkla ilgilenen tutkulu bir bireyim. Bu alan, yolculuğumu, projelerimi paylaşmak ve benzer düşüncelere sahip insanlarla bağlantı kurmak için oluşturuldu.</p>
     </section>
+
     <section id="projeler">
         <h2>Projeler</h2>
         <p>Burada en son çalışmalarımdan bazılarını bulabilirsiniz. Güncellemeler için takipte kalın!</p>
         <ul>
-            <li>Proje 1: <a href="proje.html" class="button" target="_blank">Göz At</a></li>
-          
-            <li>Proje 3: <a href="proje2.html" class="button" target="_blank">Göz At</a></li>
+            <li><a href="proje1.html" target="_blank" class="button">Proje 1 Detayları</a></li>
+            <li><a href="proje2.html" target="_blank" class="button">Proje 2 Detayları</a></li>
+            <li><a href="proje3.html" target="_blank" class="button">Proje 3 Detayları</a></li>
         </ul>
     </section>
-    
-    
 
     <!DOCTYPE html>
 <html lang="tr">
@@ -43,7 +115,8 @@
 </head>
 <body>
     <h2>Web Sitemizi Değerlendirin</h2>
-    <form action="process_form.php" method="POST">
+    <form action="https://formspree.io/f/xkggqpnj" method="POST">
+
         <label for="name">Adınız Soyadınız:</label><br>
         <input type="text" id="name" name="name" placeholder="Adınız ve Soyadınız"><br><br>
 
@@ -68,9 +141,8 @@
 </html>
 
 
-    <footer class="background">
-        <p>&copy; 2024 Efe'nin Kişisel Web Sitesi. Tüm hakları saklıdır.</p>
+    <footer>
+        <p>&copy; 2024 Efe'nin Kışisel Web Sitesi. Tüm hakları saklıdır.</p>
     </footer>
-    
 </body>
 </html>
