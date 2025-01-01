@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proje 1 - Detaylar</title>
-    <link rel="stylesheet" href="can.css">
+    <title>Proje 2 - Detaylar</title>
+    <link rel="stylesheet" href="can1.css">
 </head>
 <body>
     <header>
@@ -19,12 +19,12 @@
     </header>
 
     <section>
-        <h2>Proje 2</h2>
+        <h2>Proje 3</h2>
         <p>Bu proje, teknoloji ve yaratıcı fikirlerin birleştiği bir çalışmadır. Projenin amacı, kullanıcı dostu bir deneyim sunmaktır.</p>
         <p>Proje Özellikleri:</p>
         <ul>
-            <li>Robot yardım olarak önemlidir</li>
-            <li>insan işi yapmaya çalışır </li>
+            <li>Gaz sensörü olarak önemli</li>
+            <li>insanı zehirlendirmeden kurtarır </li>
             <li>hayat kurtarıcı</li>
         </ul>
         <p>Daha fazla bilgi için iletişime geçebilirsiniz!</p>
